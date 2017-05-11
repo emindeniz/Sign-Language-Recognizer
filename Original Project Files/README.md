@@ -14,19 +14,20 @@ This project requires **Python 3** and the following Python libraries installed:
 - [jupyter](http://ipython.org/notebook.html)
 - [hmmlearn](http://hmmlearn.readthedocs.io/en/latest/)
 
+Notes: 
+1. It is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python and load the environment included in the "Your conda env for AI ND" lesson.
+2. The most recent development version of hmmlearn, 0.2.1, contains a bugfix related to the log function, which is used in this project.  In order to install this version of hmmearn, install it directly from its repo with the following command from within your activated Anaconda environment:
+```sh
+pip install git+https://github.com/hmmlearn/hmmlearn.git
+```
 
 ### Code
 
-The original project code is in ‘Original Project Files’ folder. My implementation of the project consists of modification of the following files:
-
-asl_recognizer.ipynb
-my_model_selectors.py
-my_recognizer.py
-
+A template notebook is provided as `asl_recognizer.ipynb`. The notebook is a combination tutorial and submission document.  Some of the codebase and some of your implementation will be external to the notebook. For submission, complete the **Submission** sections of each part.  This will include running your implementations in code notebook cells, answering analysis questions, and passing provided unit tests provided in the codebase and called out in the notebook. 
 
 ### Run
 
-In a terminal or command window, navigate to the top-level project directory `asl_recognizer/` (that contains this README) and run one of the following command:
+In a terminal or command window, navigate to the top-level project directory `AIND_recognizer/` (that contains this README) and run one of the following command:
 
 `jupyter notebook asl_recognizer.ipynb`
 
@@ -57,8 +58,4 @@ in the form of start and end frames (inclusive).
 
 The videos in the corpus include recordings from three different ASL speakers.
 The mappings for the three speakers to video are included in the `speaker.csv` 
-file.  In addition, min and max hand location statistics have been gathered and are
-provided in the `speakerstats.csv` file.  This may be helpful in standardizing the 
-hand position values since taller speakers have a wider range of motion.
-
-
+file.
